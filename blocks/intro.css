@@ -17,6 +17,7 @@
   color: #ffffff;
   max-width: 830px;
   margin: 0 0 0 0;
+  text-align: left;
 }
 
 .intro__text {
@@ -28,6 +29,8 @@
   color: #ffffff;
   max-width: 830px;
   margin: 40px 0 0 0;
+  padding-top: 41px;
+  
 }
 .intro__author {
   font-family: "Inter";
@@ -69,6 +72,7 @@
     color: #ffffff;
     max-width: 707px;
     margin: 0 0 0 0;
+    text-align: left;
   }
 
   .intro__text {
@@ -102,6 +106,7 @@
     color: #ffffff;
     max-width: 720px;
     margin: 0 0 0 0;
+    padding-top: 41px;
   }
 }
 
@@ -119,7 +124,7 @@
     font-weight: 900;
     font-size: 40px;
     line-height: 44px;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     max-width: 228px;
     margin: 0 0 0 0;
@@ -134,7 +139,9 @@
     color: #ffffff;
     max-width: 288px;
     margin: 0 0 0 0;
+    padding-top: 41px;
   }
+
   .intro__author {
     font-family: "Inter";
     font-style: normal;
