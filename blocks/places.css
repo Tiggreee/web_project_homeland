@@ -1,162 +1,164 @@
 .places {
-    display: grid;
-    grid-template-areas: 
-        "title subtitle"
-        "image text"
-        "button empty"
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.place {
+  display: grid;
+  grid-template-areas:
+    "title subtitle"
+    "image texts"
+    "button texts";
+  grid-template-rows: auto 460px auto;
+  margin-bottom: 30px;
+  gap: 40px;
 }
 
 .places__title {
-    grid-area: title;
-    align-self: start;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    max-width: 460px;
-    height: 152px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 76px;
-    color: #FFFFFF;
+  grid-area: title;
+  align-self: start;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  max-width: 460px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #ffffff;
 }
 
 .places__subtitle {
-    grid-area: subtitle;
-    max-width: 85.17px;
-    height: 15px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #AAAAAA;
-    padding-top: 110px;
+  grid-area: subtitle;
+  max-width: 92px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  padding-top: 110px;
 }
 
 .places__staff {
-    grid-area: subtitle;
-    max-width: 455.53px;
-    height: 44px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.places__image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: image;
-    position: relative;
-    max-width: 460px;
-    height: 460px;
-    margin-top: 1.5em;
+  grid-area: subtitle;
+  max-width: 455.53px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
 }
 
 .places__image {
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
+  grid-area: image;
+  max-width: 600px;
+  height: 100%;
+  width: 100%;
 }
 
 .places__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: button;
-    color: #fff;
-    margin-top: 15px;
-    max-width: 289px;
-    height: 48px;
-    background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: button;
+  color: #fff;
+  margin-top: 15px;
+  max-width: 289px;
+  height: 48px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
 }
 
 .places__button:hover {
-    background-color: #005ea6;
+  background-color: #005ea6;
 }
 
 .places__description {
-    grid-area: text;
-    max-width: 484px;
-    height: 203px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 163%;
-    color: #FFFFFF;
+  grid-area: texts;
+  max-width: 484px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 1024px) {
-    .places {
-        grid-template-areas: 
-            "title"
-            "image"
-            "text";
-        grid-template-columns: 1fr; 
-    }
+  .place {
+    display: grid;
+    grid-template-areas:
+      "title subtitle"
+      "image texts"
+      "button texts";
+    margin-bottom: 30px;
+    grid-template-rows: 92px auto;
+  }
 
-    .places__title {
-        max-width: 340px;
-        height: 46px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 42px;
-        line-height: 46px;
-        color: #FFFFFF;
-    }
+  .places__title {
+    max-width: 340px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 46px;
+    color: #ffffff;
+  }
 
-    .places__image-container {
-        margin-bottom: 15px;
-        max-width: 340px;
-        height: 340px;
-    }
+  .places__subtitle {
+    padding-top: 0;
+  }
 
-    .places__button {
-        width: max-content;
-    }
+  .places__description {
+    width: 352px;
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 544px) {
-    .places__title {
-        max-width: 288px;
-        height: 35px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 32px;
-        line-height: 35px;
-        color: #FFFFFF;
-    }
+  .place {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "image"
+      "texts"
+      "button";
+    margin-bottom: 30px;
+  }
 
-    .places__image-container {
-        max-width: 320px;
-        height: 320px;
-    }
-    
-    .places__button {
-        font-size: 0.9rem;
-        padding: 8px 12px;
-    }
+  .places__title {
+    max-width: 288px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    color: #ffffff;
+  }
 
-    .places__text-container {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
+  .places__image {
+    max-width: 320px;
+  }
+
+  .places__button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
 }
