@@ -60,6 +60,7 @@
   max-width: 600px;
   height: 100%;
   width: 100%;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .places__button {
@@ -80,6 +81,7 @@
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .places__button:hover {
