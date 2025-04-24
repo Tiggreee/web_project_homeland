@@ -86,6 +86,10 @@
   background-color: #005ea6;
 }
 
+.p {
+  padding: 0;
+}
+
 .places__description {
   grid-area: texts;
   max-width: 484px;
