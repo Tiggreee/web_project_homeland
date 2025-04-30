@@ -11,7 +11,7 @@
     "image texts"
     "button texts";
   grid-template-rows: auto 460px auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   gap: 40px;
 }
 
