@@ -4,7 +4,7 @@
   background-color: #2a2c2f;
   display: flex;
   flex-direction: column;
-  margin: 92px 0 0 0;
+  margin: 92px;
   padding-right: 154px;
 }
 
@@ -30,7 +30,6 @@
   max-width: 830px;
   margin: 40px 0 0 0;
   padding-top: 41px;
-  
 }
 .intro__author {
   font-family: "Inter";
@@ -59,7 +58,6 @@
   .intro {
     max-width: 768px;
     height: 100%;
-    margin: 0;
     padding-right: 50px;
   }
 
