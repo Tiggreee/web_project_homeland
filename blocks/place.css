@@ -65,11 +65,7 @@
 }
 
 .places__image:hover {
-  background-image: linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 0.25) 0%,
-    rgba(0, 58, 123, 0.25) 99.98%
-  );
+  opacity: 0.5;
 }
 
 .places__button {
@@ -114,6 +110,10 @@
   padding: 0;
 }
 
+.places__descriptions {
+  grid-area: texts;
+}
+
 @media (max-width: 1024px) {
   .place {
     display: grid;
@@ -123,6 +123,9 @@
       "button texts";
     margin-bottom: 30px;
     grid-template-rows: 92px auto;
+    width: 100%;
+    max-width: 720px;
+    gap: 30px;
   }
 
   .places__title {
@@ -133,6 +136,8 @@
     font-size: 42px;
     line-height: 46px;
     color: #ffffff;
+    margin-top: 0px;
+    padding-bottom: 15px;
   }
 
   .places__subtitle {
@@ -140,7 +145,6 @@
   }
 
   .places__description {
-    width: 352px;
     font-weight: 400;
     font-size: 16px;
   }
@@ -156,24 +160,41 @@
       "texts"
       "button";
     margin-bottom: 30px;
+    gap: 25px;
   }
 
   .places__title {
-    max-width: 288px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
     line-height: 35px;
     color: #ffffff;
+    padding-left: 15px;
+    margin-bottom: 0px;
+    align-self: end;
+    padding-bottom: 0px;
+  }
+
+  .places__subtitle {
+    padding-left: 15px;
+  }
+
+  .places__staff {
+    padding-left: 15px;
   }
 
   .places__image {
-    max-width: 320px;
+    margin: auto;
   }
 
   .places__button {
     font-size: 0.9rem;
     padding: 8px 12px;
+    margin: auto;
+  }
+
+  .places__descriptions {
+    padding: 0 20px;
   }
 }
